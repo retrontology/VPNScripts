@@ -22,8 +22,8 @@ sudo ufw allow 22
 sudo ufw allow out $vpnport
 sudo ufw disable
 sudo ufw --force enable
-sudo systemctl start openvpn
-sudo systemctl enable openvpn
+sudo systemctl start openvpn-client@Sweden
+sudo systemctl enable openvpn-client@Sweden
 sudo systemctl start transmission-daemon
 sudo systemctl enable transmission-daemon
 ./port_forwarding.sh
